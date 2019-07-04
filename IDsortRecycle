@@ -2,6 +2,7 @@
 //to amonseti
 //@clearjournal
 //set alias for your goodshit bag.
+//line 180ish is where you want to set what you want to keep.
 @setalias 'goodshit' 0x40e5e3d9
 unsetalias 'bagtosort'
 // !! user Input
@@ -12,7 +13,7 @@ endif
 pause 700
 useobject 'bagtosort'
 pause 1000
-useobject 'GoodShit'
+useobject 'goodshit'
 pause 1000
 //Remove Old List and
 //Create a new one.
@@ -179,12 +180,12 @@ for 0 to 'ItemTypes'
     endif
     //change 'ruin' to whichever property you are looking to keep
     if @injournal 'ruin' 'system'
-      moveitem 'found' 'GoodShit'
+      moveitem 'found' 'goodshit'
       pause 500
     elseif @injournal 'eminently' 'system'
-      moveitem 'found' 'GoodShit'
+      moveitem 'found' 'goodshit'
     elseif @injournal 'surpassingly' 'system'
-      moveitem 'found' 'GoodShit'
+      moveitem 'found' 'goodshit'
     else
       ignoreobject 'found'
       pause 500
