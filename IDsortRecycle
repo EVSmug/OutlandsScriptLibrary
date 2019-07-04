@@ -1,8 +1,10 @@
-//Credit pushlist
-//to amonseti
-//@clearjournal
-//set alias for your goodshit bag.
+//Credit amonseti
+/////////////
+//uses carpenter saws for recycle.
+//you have to set it to recycle entire bag.
 //line 180ish is where you want to set what you want to keep.
+/////////////
+//set alias for your goodshit bag.
 @setalias 'goodshit' 0x40e5e3d9
 unsetalias 'bagtosort'
 // !! user Input
@@ -184,14 +186,16 @@ for 0 to 'ItemTypes'
       pause 500
     elseif @injournal 'eminently' 'system'
       moveitem 'found' 'goodshit'
+      pause 500
     elseif @injournal 'surpassingly' 'system'
       moveitem 'found' 'goodshit'
+      pause 500
     else
       ignoreobject 'found'
-      pause 500
     endif
   endwhile
 endfor
+//uses carpenter saws for recycle
 usetype 0x1034 0 'backpack'
 pause 500
 waitforgump 0x38920abd 15000
